@@ -7,6 +7,10 @@ export default function App() {
     //flex : 1 willl make view occupy the entire screen
     <View style={{ flex: 1, backgroundColor: "plum", padding: 60 }}>
       <Image source={logoImg} style={{ width: 300, height: 300 }} />
+      <Image
+        source={{ uri: "https://picsum.photos/300/300" }}
+        style={{ width: 300, height: 300 }}
+      />
     </View>
   );
 }
