@@ -14,6 +14,21 @@ export default function App() {
         title="Alert 2"
         onPress={() => Alert.alert("Invalid data", "DOB Incorrect")}
       />
+      <Button
+        title="Alert 3"
+        onPress={() =>
+          Alert.alert("Invalid data", "DOB Incorrect", [
+            {
+              text: "Cancel",
+              onPress: () => console.log("Cancel pressed"),
+            },
+            {
+              text: "OK",
+              onPress: () => console.log("OK pressed"),
+            },
+          ])
+        }
+      />
     </View>
   );
 }
